@@ -1,0 +1,11 @@
+[Protocol]
+exec=antcoin-qt '%u'
+protocol=antcoin
+input=none
+output=none
+helper=true
+listing=
+reading=false
+writing=false
+makedir=false
+deleting=false

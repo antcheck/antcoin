@@ -1,0 +1,27 @@
+# /etc/conf.d/antcoind: config file for /etc/init.d/antcoind
+
+# Config file location
+#BITCOIND_CONFIGFILE="/etc/antcoin/antcoin.conf"
+
+# What directory to write pidfile to?  (created and owned by $BITCOIND_USER)
+#BITCOIND_PIDDIR="/var/run/antcoind"
+
+# What filename to give the pidfile
+#BITCOIND_PIDFILE="${BITCOIND_PIDDIR}/antcoind.pid"
+
+# Where to write antcoind data (be mindful that the blockchain is large)
+#BITCOIND_DATADIR="/var/lib/antcoind"
+
+# User and group to own antcoind process
+#BITCOIND_USER="antcoin"
+#BITCOIND_GROUP="antcoin"
+
+# Path to antcoind executable
+#BITCOIND_BIN="/usr/bin/antcoind"
+
+# Nice value to run antcoind under
+#BITCOIND_NICE=0
+
+# Additional options (avoid -conf and -datadir, use flags above)
+BITCOIND_OPTS="-disablewallet"
+

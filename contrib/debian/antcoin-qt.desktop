@@ -1,0 +1,12 @@
+[Desktop Entry]
+Encoding=UTF-8
+Name=Antcoin
+Comment=Antcoin P2P Cryptocurrency
+Comment[fr]=Antcoin, monnaie virtuelle cryptographique pair à pair
+Comment[tr]=Antcoin, eşten eşe kriptografik sanal para birimi
+Exec=antcoin-qt %u
+Terminal=false
+Type=Application
+Icon=antcoin128
+MimeType=x-scheme-handler/antcoin;
+Categories=Office;Finance;
