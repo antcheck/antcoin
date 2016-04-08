@@ -20,7 +20,7 @@ packages:
 - "zip"
 reference_datetime: "2014-01-10 00:00:00"
 remotes:
-- "url": "https://github.com/dashpay/dash.git"
+- "url": "https://github.com/antcheck/antcoin.git"
   "dir": "dash"
 files: []
 script: |
