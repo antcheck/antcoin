@@ -124,7 +124,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "09 Apr 2016:  Mercedes Nico Rosberg is concerned F1 is heading in the wrong direction with the proposed 2017 regulations and fears overtaking will become even more difficult";
+        const char* pszTimestamp = "09/04/2016 Jordan Ayew reduced the deficit with a powerful shot";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -138,11 +138,11 @@ public:
         genesis.nVersion = 1;
         genesis.nTime    = 1460210400;
         genesis.nBits    = 0x1e0ffff0; 
-        genesis.nNonce   = 2039756;
+        genesis.nNonce   = 479097;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000001a7d305b8418080723ecd11220eaa36d001dd64a7aaf2428a1ea514f65f"));
-        assert(genesis.hashMerkleRoot == uint256("0xa5d0f227782c8eb9176d0efa75e70e1bdf35d3b5b831a8abd24dfab1cf3c81de"));
+        assert(hashGenesisBlock == uint256("0x000008d5f8cc211dc8183d9106755f83a1a2e59501ebc30763c1d71e10cd80d8"));
+        assert(genesis.hashMerkleRoot == uint256("0x473aae614dba6ce9fb9e0e27f96c2526860f2aebf6d1c1e1355250a0746539e0"));
 
 		vSeeds.clear();
 
@@ -202,10 +202,10 @@ public:
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
         genesis.nTime = 1460210401;
-        genesis.nNonce = 101413;
+        genesis.nNonce = 881405;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000007d723c64fb8375250d0c6cf041a72e2c79f0996caaddeea260c2e88f703"));
+        assert(hashGenesisBlock == uint256("0x00000f45c609e89addd7e0aa71c06b1958cc5bb10181b5c9ee9cebb77f3400c3"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -267,11 +267,11 @@ public:
         nTargetSpacing = 2.5 * 60; // Antcoin: 2.5 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
         genesis.nTime = 1460210402;
-        genesis.nBits = 0x1e0ffff0;
-        genesis.nNonce = 3598476;
+        genesis.nBits = 0x207fffff;
+        genesis.nNonce = 2;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 17773;
-        assert(hashGenesisBlock == uint256("0x000008fcf1743827b9ce59c65de3ea0ea59a6f50ac578a3ee2011b51230c5b7e"));
+        assert(hashGenesisBlock == uint256("0x764adaea556c8d384ab385a53a0777f4490bec5ec3d9b11b83714afea1985b2b"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
