@@ -124,7 +124,7 @@ public:
          *     CTxOut(nValue=50.00000000, scriptPubKey=0xA9037BAC7050C479B121CF)
          *   vMerkleTree: e0028e
          */
-        const char* pszTimestamp = "09/04/2016 Jordan Ayew reduced the deficit with a powerful shot";
+        const char* pszTimestamp = "10/04/2016 Jordan Ayew reduced the deficit with a powerful shot";
         CMutableTransaction txNew;
         txNew.vin.resize(1);
         txNew.vout.resize(1);
@@ -136,13 +136,13 @@ public:
         genesis.hashPrevBlock = 0;
         genesis.hashMerkleRoot = genesis.BuildMerkleTree();
         genesis.nVersion = 1;
-        genesis.nTime    = 1460210400;
+        genesis.nTime    = 1460278800;
         genesis.nBits    = 0x1e0ffff0; 
-        genesis.nNonce   = 479097;
+        genesis.nNonce   = 314936;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x000008d5f8cc211dc8183d9106755f83a1a2e59501ebc30763c1d71e10cd80d8"));
-        assert(genesis.hashMerkleRoot == uint256("0x473aae614dba6ce9fb9e0e27f96c2526860f2aebf6d1c1e1355250a0746539e0"));
+        assert(hashGenesisBlock == uint256("0x00000dcc1df3e8ad716a980cd60e134201b1e5ddeb44e0e5000c17cf61d440de"));
+        assert(genesis.hashMerkleRoot == uint256("0xaf55a18fd6bbe6a497a18be462f84ad8b67d65be27b86683da0d5b1f6b49249c"));
 
 		vSeeds.clear();
 
@@ -169,7 +169,7 @@ public:
         strSporkKey = "049f45c6355e4d8684141a36869ab65363f43336ec50ef5f3922f13ecb15fe482c48f1e618e5220b17d8d3386fe1046790a0a2188f59a85a064057a1241ebf0d0a";
         strMasternodePaymentsPubKey = "049f45c6355e4d8684141a36869ab65363f43336ec50ef5f3922f13ecb15fe482c48f1e618e5220b17d8d3386fe1046790a0a2188f59a85a064057a1241ebf0d0a";
         strDarksendPoolDummyAddress = "Xq19GqFvajRrEdDHYRKGYjTsQfpV5jyipF";
-        nStartMasternodePayments = 1460210400; 
+        nStartMasternodePayments = 1460278800;
     }
 
     const Checkpoints::CCheckpointData& Checkpoints() const 
@@ -201,11 +201,11 @@ public:
         nTargetSpacing = 2.5 * 60; // Antcoin: 2.5 minutes
 
         //! Modify the testnet genesis block so the timestamp is valid for a later start.
-        genesis.nTime = 1460210401;
-        genesis.nNonce = 881405;
+        genesis.nTime = 1460278801;
+        genesis.nNonce = 837480;
 
         hashGenesisBlock = genesis.GetHash();
-        assert(hashGenesisBlock == uint256("0x00000f45c609e89addd7e0aa71c06b1958cc5bb10181b5c9ee9cebb77f3400c3"));
+        assert(hashGenesisBlock == uint256("0x0000062da96549cf32c828804a6f2e1779f7a67989d4356dfacf5d93dfa35f87"));
 
         vFixedSeeds.clear();
         vSeeds.clear();
@@ -237,7 +237,7 @@ public:
         strSporkKey = "041ddf3973dc08f60afe98c285c244abe22bb979e65d31d85fa95560fa68ca8f94d22dd6bd24abab13d6a7579f2a38e237ba754bc0350014b3d07e04a1eca1ab02";
         strMasternodePaymentsPubKey = "041ddf3973dc08f60afe98c285c244abe22bb979e65d31d85fa95560fa68ca8f94d22dd6bd24abab13d6a7579f2a38e237ba754bc0350014b3d07e04a1eca1ab02";
         strDarksendPoolDummyAddress = "y1EZuxhhNMAUofTBEeLqGE1bJrpC2TWRNp";
-        nStartMasternodePayments = 1460210400; //Fri, 09 Jan 2015 21:05:58 GMT
+        nStartMasternodePayments = 1460278801; //Fri, 09 Jan 2015 21:05:58 GMT
     }
     const Checkpoints::CCheckpointData& Checkpoints() const 
     {
@@ -266,12 +266,12 @@ public:
         nTargetTimespan = 24 * 60 * 60; // Antcoin: 1 day
         nTargetSpacing = 2.5 * 60; // Antcoin: 2.5 minutes
         bnProofOfWorkLimit = ~uint256(0) >> 1;
-        genesis.nTime = 1460210402;
+        genesis.nTime = 1460278802;
         genesis.nBits = 0x207fffff;
         genesis.nNonce = 2;
         hashGenesisBlock = genesis.GetHash();
         nDefaultPort = 17773;
-        assert(hashGenesisBlock == uint256("0x764adaea556c8d384ab385a53a0777f4490bec5ec3d9b11b83714afea1985b2b"));
+        assert(hashGenesisBlock == uint256("0x7ff664992134d3b88aad10e9f0725f90f8b28a29aafb08f454dac2500663eaf2"));
 
         vFixedSeeds.clear(); //! Regtest mode doesn't have any fixed seeds.
         vSeeds.clear();  //! Regtest mode doesn't have any DNS seeds.
